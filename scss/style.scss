@@ -100,12 +100,7 @@ h2 {
         font-weight: $text_fw;
         margin: 20px 0 30px 0;
     }
-
-    &__contact {
-
-    }
-
-
+    
     &__items-contact {
         margin-bottom: 20px;
         border-bottom: $title_bd;
@@ -131,11 +126,6 @@ h2 {
             right: 0;
         }
     }
-
-    &__lenguages {
-        // padding-top: 40px;
-    }
-
     &__lenguages-title {
         padding-bottom: 50px;
     }
@@ -462,6 +452,11 @@ h2 {
     .container {
         min-width: 320px;
     }
+
+    .right__info-connection a {
+        display: block;
+        padding-bottom: 10px;
+    } 
 }
 
 @media (max-width: 480px) {
@@ -475,9 +470,7 @@ h2 {
 
     .right__skills-level {
         width: 50%;
-    }
-
-    
+    }  
 }
 
 @media (max-width: 320px) {
