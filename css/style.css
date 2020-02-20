@@ -382,3 +382,38 @@ h2 {
 .right__skills-progresGIT::before {
 		width: 70%;
 }
+
+@media (max-width: 1024px) {
+		.container {
+				width: 90%;
+		}
+}
+@media (max-width: 992px) {
+		.container {
+				flex-direction: column;
+		}
+
+		.left__lenguages-decor {
+				display: none;
+		}
+}
+@media (max-width: 768px) {
+		.container {
+				width: 80%;
+		}
+
+		.right__wrap {
+				padding: 20px 20px;
+		}
+}
+@media (max-width: 567px) {
+		.right__decor-center {
+				width: 70px;
+				height: 70px;
+		}
+}
+@media (max-width: 480px) {
+		.right__decor {
+				display: none;
+		}
+}
