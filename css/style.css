@@ -80,9 +80,9 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 
 .container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 15px;
+		max-width: 990px;
+		margin: 20px auto;
+		background-color: #EAEAEA;
 }
 
 .caption {
@@ -98,7 +98,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 .left__photo {
 		width: 100%;
-		margin-bottom: 47px;
 }
 .left__photo img {
 		width: 100%;
@@ -107,7 +106,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 		padding-bottom: 70px;
 }
 .left__inner {
-		padding: 0 30px;
+		padding: 47px 30px 70px;
 }
 .left__caption {
 		border-bottom: 2px dashed #5A5A5A;
@@ -125,6 +124,9 @@ h1, h2, h3, h4, h5, h6, ul, p {
 		margin-bottom: 20px;
 		border-bottom: 2px dashed #5A5A5A;
 		padding-bottom: 20px;
+}
+.left__items-contact a {
+		padding-left: 31px;
 }
 .left__caption-contact {
 		padding-bottom: 20px;
@@ -147,7 +149,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .left__items-wrap {
 		display: flex;
 		flex-wrap: wrap;
-		padding-bottom: 70px;
 }
 .left__lenguages-items {
 		border: 6px solid #5c5c5c;

@@ -42,9 +42,11 @@ h1, h2, h3, h4, h5, h6, ul , p {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 990px;
+    margin: 20px auto;
+    // padding: 0 15px;
+    background-color: #EAEAEA;
+
 }
 
 .caption {
@@ -59,7 +61,6 @@ h1, h2, h3, h4, h5, h6, ul , p {
     background-color: $color_left;
     &__photo {
         width: 100%;
-        margin-bottom: 47px;
         img {
             width: 100%; 
         }
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
     }
 
     &__inner {
-        padding: 0 30px;
+        padding: 47px 30px 70px;
     }
 
     &__caption {
@@ -97,7 +98,9 @@ h1, h2, h3, h4, h5, h6, ul , p {
         border-bottom: $title_bd;
         padding-bottom: 20px;
         // padding-left: 30px;
-        
+        a{
+            padding-left: 31px;
+        }
     }
 
     &__caption-contact {
@@ -127,7 +130,6 @@ h1, h2, h3, h4, h5, h6, ul , p {
     &__items-wrap {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 70px;
     }
 
     &__lenguages-items {
