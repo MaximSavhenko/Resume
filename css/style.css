@@ -75,6 +75,16 @@ h1, h2, h3, h4, h5, h6, ul, p {
 		padding: 0;
 }
 
+h2 {
+		border-bottom: 1px solid #eaeaea;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+		font-size: 16px;
+		font-family: "Open Sans";
+		font-weight: 600;
+		color: #39383A;
+}
+
 .wrap {
 		overflow: hidden;
 }
@@ -110,6 +120,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 .left__inner {
 		padding: 47px 30px 70px;
+		height: 100%;
 }
 .left__caption {
 		border-bottom: 2px dashed #5A5A5A;
@@ -207,13 +218,15 @@ h1, h2, h3, h4, h5, h6, ul, p {
 		padding: 36px 56px;
 		min-height: 100%;
 }
+.right__top-info {
+		border-bottom: 1px solid #eaeaea;
+		padding-bottom: 40px;
+		margin-bottom: 30px;
+}
 .right__decor {
 		display: flex;
 		justify-content: center;
-}
-.right__right__decor {
-		display: flex;
-		justify-content: center;
+		margin-bottom: 38px;
 }
 .right__lines {
 		display: flex;
@@ -248,7 +261,124 @@ h1, h2, h3, h4, h5, h6, ul, p {
 		border: 1px solid #000;
 }
 .right__info-descr {
+		text-align: center;
+}
+.right__info-caption {
+		margin-bottom: 15px;
+}
+.right__info-caption h1 {
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		font-family: "Roboto";
+}
+.right__info-position {
+		margin-bottom: 15px;
+}
+.right__info-position span {
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #808080;
+}
+.right__info-location {
+		margin-bottom: 13px;
+}
+.right__info-location address {
+		color: #39383A;
+		font-size: 14px;
+		font-family: "Roboto";
+		font-weight: 400;
+}
+.right__info-connection a {
+		font-family: "Roboto";
+		font-size: 11px;
+		font-weight: 400;
+		color: #777777;
+}
+.right__experiense {
+		margin-bottom: 40px;
+}
+.right__experiense-item {
+		position: relative;
+		margin-bottom: 40px;
+		padding-left: 40px;
+		border-bottom: 1px dashed #707070;
+}
+.right__experiense-item::before {
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: 0px;
+		right: 0;
+		bottom: 0;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		display: block;
+		background-color: #000;
+}
+.right__experiense-item--title {
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+}
+.right__experiense-item--date {
+		font-size: 11px;
+		font-weight: 500;
+		font-family: "Roboto";
+		margin-bottom: 14px;
+		display: block;
+}
+.right__experiense-item--text {
+		font-size: 12px;
+		font-weight: 500;
+		font-family: "Roboto";
+		color: #777777;
+		padding-bottom: 40px;
+}
+.right__experiense-item--bordernone {
+		border: none;
+}
+.right__skills h2 {
+		padding-bottom: 48px;
+}
+.right__skills-item {
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 600;
+		font-family: "Open Sans";
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		justify-content: space-between;
+}
+.right__skills-level {
+		width: 70%;
+		height: 8px;
+		border: 1px solid #39383a;
+		position: relative;
+}
+.right__skills-level::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		background-color: #898989;
+}
+.right__skills-progresH::before {
+		width: 70%;
+}
+.right__skills-progresC::before {
+		width: 60%;
+}
+.right__skills-progresJ::before {
+		width: 30%;
+}
+.right__skills-progresPS::before {
+		width: 50%;
+}
+.right__skills-progresGIT::before {
+		width: 70%;
 }
