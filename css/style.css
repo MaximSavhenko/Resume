@@ -6,7 +6,7 @@
 }
 @font-face {
 		font-family: "Open Sans";
-		src: url("../../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../../fonts/OpenSans-SemiBold.woff") format("woff");
+		src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
 		font-weight: 600;
 		font-style: normal;
 }
@@ -44,7 +44,7 @@ body {
 		margin: 0;
 		min-width: 320px;
 		font-size: 13px;
-		font-family: "Roboto", sans-serif, "Open Sans";
+		font-family: "Roboto", sans-serif, Arial;
 		font-weight: 400;
 }
 
@@ -319,6 +319,7 @@ h2 {
 		background-color: #000;
 }
 .right__experiense-item--title {
+		font-family: "Open sans";
 		font-size: 12px;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -402,6 +403,10 @@ h2 {
 				width: 80%;
 		}
 
+		.right {
+				padding: 10px;
+		}
+
 		.right__wrap {
 				padding: 20px 20px;
 		}
@@ -432,6 +437,7 @@ h2 {
 		.right__info-connection a {
 				display: block;
 				padding-bottom: 10px;
+				font-size: 13px;
 		}
 }
 @media (max-width: 480px) {
