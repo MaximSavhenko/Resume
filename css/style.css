@@ -141,6 +141,10 @@ h2 {
 }
 .left__items-contact a {
 		padding-left: 31px;
+		transition: all 0.3s;
+}
+.left__items-contact a:hover {
+		color: #fff;
 }
 .left__caption-contact {
 		padding-bottom: 20px;
@@ -295,6 +299,10 @@ h2 {
 		font-size: 11px;
 		font-weight: 400;
 		color: #777777;
+		transition: all 0.3s;
+}
+.right__info-connection a:hover {
+		color: #ABABAB;
 }
 .right__experiense {
 		margin-bottom: 40px;
