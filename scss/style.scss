@@ -67,7 +67,7 @@ h2 {
     font-weight: $title_fw;
 }
 
-.left {
+.profile {
     flex-basis: 35%;
     background-color: $color_left;
     &__photo {
@@ -186,7 +186,7 @@ h2 {
     }
 }
 
-.right {
+.resume {
     flex-basis: 63%;
     background-color: #fff;
     padding: 25px 30px;
