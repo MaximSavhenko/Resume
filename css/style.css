@@ -97,6 +97,26 @@ h2 {
 		justify-content: space-between;
 		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 1024px) {
+		.container {
+				width: 90%;
+		}
+}
+@media (max-width: 992px) {
+		.container {
+				flex-direction: column;
+		}
+}
+@media (max-width: 767px) {
+		.container {
+				width: 80%;
+		}
+}
+@media (max-width: 567px) {
+		.container {
+				min-width: 320px;
+		}
+}
 
 .caption {
 		font-size: 16px;
@@ -199,6 +219,11 @@ h2 {
 		flex-direction: column;
 		justify-content: center;
 }
+@media (max-width: 992px) {
+		.profile__lenguages-decor {
+				display: none;
+		}
+}
 .profile__lines {
 		display: block;
 		width: 100px;
@@ -217,10 +242,20 @@ h2 {
 		background-color: #fff;
 		padding: 25px 30px;
 }
+@media (max-width: 767px) {
+		.resume {
+				padding: 10px;
+		}
+}
 .resume__wrap {
 		border: 1px solid #A8A8A8;
 		padding: 36px 56px;
 		min-height: 100%;
+}
+@media (max-width: 767px) {
+		.resume__wrap {
+				padding: 20px 20px;
+		}
 }
 .resume__top-info {
 		border-bottom: 1px solid #eaeaea;
@@ -231,6 +266,11 @@ h2 {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 38px;
+}
+@media (max-width: 480px) {
+		.resume__decor {
+				display: none;
+		}
 }
 .resume__lines {
 		display: flex;
@@ -264,6 +304,12 @@ h2 {
 		border-radius: 50%;
 		border: 1px solid #000;
 }
+@media (max-width: 567px) {
+		.resume__decor-center {
+				width: 70px;
+				height: 70px;
+		}
+}
 .resume__info-descr {
 		text-align: center;
 }
@@ -276,6 +322,11 @@ h2 {
 		text-transform: uppercase;
 		letter-spacing: 10px;
 		font-family: "Roboto";
+}
+@media (max-width: 480px) {
+		.resume__info-caption h1 {
+				letter-spacing: normal;
+		}
 }
 .resume__info-position {
 		margin-bottom: 15px;
@@ -300,6 +351,25 @@ h2 {
 		font-weight: 400;
 		color: #777777;
 		transition: all 0.3s;
+		margin-left: 20px;
+		position: relative;
+}
+@media (max-width: 567px) {
+		.resume__info-connection a {
+				display: block;
+				padding-bottom: 10px;
+				font-size: 13px;
+		}
+}
+.resume__info-connection a::after {
+		content: "";
+		width: 1px;
+		height: 10px;
+		background-color: #777777;
+		position: absolute;
+		top: 2px;
+		right: -10px;
+		bottom: 0;
 }
 .resume__info-connection a:hover {
 		color: #ABABAB;
@@ -333,6 +403,11 @@ h2 {
 		text-transform: uppercase;
 		margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+		.resume__experiense-item--title {
+				font-size: 14px;
+		}
+}
 .resume__experiense-item--date {
 		font-size: 11px;
 		font-weight: 500;
@@ -340,12 +415,23 @@ h2 {
 		margin-bottom: 14px;
 		display: block;
 }
+@media (max-width: 767px) {
+		.resume__experiense-item--date {
+				font-size: 12px;
+		}
+}
 .resume__experiense-item--text {
 		font-size: 12px;
 		font-weight: 500;
 		font-family: "Roboto";
 		color: #777777;
 		padding-bottom: 40px;
+}
+@media (max-width: 767px) {
+		.resume__experiense-item--text {
+				font-size: 13px;
+				line-height: 1.4;
+		}
 }
 .resume__experiense-item--bordernone {
 		border: none;
@@ -367,6 +453,11 @@ h2 {
 		height: 8px;
 		border: 1px solid #39383a;
 		position: relative;
+}
+@media (max-width: 480px) {
+		.resume__skills-level {
+				width: 50%;
+		}
 }
 .resume__skills-level::before {
 		content: "";
@@ -390,74 +481,4 @@ h2 {
 }
 .resume__skills-progresGIT::before {
 		width: 70%;
-}
-
-@media (max-width: 1024px) {
-		.container {
-				width: 90%;
-		}
-}
-@media (max-width: 992px) {
-		.container {
-				flex-direction: column;
-		}
-
-		.left__lenguages-decor {
-				display: none;
-		}
-}
-@media (max-width: 768px) {
-		.container {
-				width: 80%;
-		}
-
-		.right {
-				padding: 10px;
-		}
-
-		.right__wrap {
-				padding: 20px 20px;
-		}
-
-		.right__experiense-item--title {
-				font-size: 14px;
-		}
-
-		.right__experiense-item--text {
-				font-size: 13px;
-				line-height: 1.4;
-		}
-
-		.right__experiense-item--date {
-				font-size: 12px;
-		}
-}
-@media (max-width: 567px) {
-		.right__decor-center {
-				width: 70px;
-				height: 70px;
-		}
-
-		.container {
-				min-width: 320px;
-		}
-
-		.right__info-connection a {
-				display: block;
-				padding-bottom: 10px;
-				font-size: 13px;
-		}
-}
-@media (max-width: 480px) {
-		.right__decor {
-				display: none;
-		}
-
-		.right__info-caption h1 {
-				letter-spacing: normal;
-		}
-
-		.right__skills-level {
-				width: 50%;
-		}
 }

@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "mixins.scss";
 
 
 body {
@@ -58,6 +59,18 @@ h2 {
     display: flex;
     justify-content: space-between;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    @include b(tablet) {
+        width: 90%;
+    }
+    @include b(992) {
+        flex-direction: column;
+    }
+    @include b(mobile) {
+        width: 80%;
+    }
+    @include b(567) {
+        min-width: 320px;
+    }
 }
 
 .caption {
@@ -170,6 +183,9 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include b(992) {
+            display: none;
+        }
     }
 
     &__lines {
@@ -190,12 +206,18 @@ h2 {
     flex-basis: 63%;
     background-color: #fff;
     padding: 25px 30px;
+    @include b(mobile) {
+        padding: 10px;
+    }
     
 
     &__wrap {
         border: 1px solid #A8A8A8;
         padding: 36px 56px ;
         min-height: 100%;
+        @include b(mobile) {
+            padding: 20px 20px;
+        }
     }
 
     &__top-info {
@@ -208,6 +230,9 @@ h2 {
         display: flex;
         justify-content: center;
         margin-bottom: 38px;
+        @include b(480) {
+            display: none;
+        }
     }
     
     &__lines {
@@ -251,6 +276,10 @@ h2 {
         height: 90px;
         border-radius: 50%;
         border: 1px solid #000;
+        @include b(567) {
+            width: 70px;
+            height: 70px;
+        }
     } 
 
     &__info-descr {
@@ -265,6 +294,9 @@ h2 {
             text-transform: uppercase;
             letter-spacing: 10px;
             font-family: 'Roboto';
+            @include b(480) {
+                letter-spacing: normal;
+            }
         }
     }
 
@@ -294,6 +326,25 @@ h2 {
             font-weight: 400;
             color: #777777;
             transition: all .3s;
+            margin-left: 20px;
+            position: relative;
+            @include b(567) {
+                display: block;
+                padding-bottom: 10px;
+                font-size: 13px;
+            }
+
+
+            &::after {
+                content: '';
+                width: 1px;
+                height: 10px;
+                background-color: #777777;
+                position: absolute;
+                top: 2px;
+                right: -10px;
+                bottom: 0;
+            }
 
             &:hover {
                 color: $text_color;
@@ -304,8 +355,6 @@ h2 {
     &__experiense {
         margin-bottom: 40px;
     }
-
-    
 
     &__experiense-item {
         position: relative;
@@ -334,6 +383,9 @@ h2 {
         font-weight: 600;
         text-transform: uppercase;
         margin-bottom: 20px;
+        @include b(mobile) {
+            font-size: 14px;
+        }
     }
 
     &__experiense-item--date {
@@ -342,6 +394,9 @@ h2 {
         font-family: 'Roboto';
         margin-bottom: 14px;
         display: block;
+        @include b(mobile) {
+            font-size: 12px;
+        }
     }
 
     &__experiense-item--text {
@@ -350,6 +405,10 @@ h2 {
         font-family: 'Roboto';
         color: #777777;
         padding-bottom: 40px;
+        @include b(mobile) {
+            font-size: 13px;
+            line-height: 1.4;
+        }
     }
 
     &__experiense-item--bordernone {
@@ -377,6 +436,10 @@ h2 {
         height: 8px;
         border: 1px solid #39383a;
         position: relative;
+        @include b(480) {
+            width: 50%;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -413,80 +476,4 @@ h2 {
         }
     }
      
-}
-
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        flex-direction: column;
-    }
-    .left__lenguages-decor {
-        display: none;
-    }
-    
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-    .right {
-        padding: 10px;
-    }
-    .right__wrap {
-        padding: 20px 20px;
-
-    }
-
-    .right__experiense-item--title {
-        font-size: 14px;
-    }
-
-    .right__experiense-item--text {
-        font-size: 13px;
-        line-height: 1.4;
-    }
-
-    .right__experiense-item--date {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 567px) {
-    .right__decor-center {
-        width: 70px;
-        height: 70px;
-    }
-    .container {
-        min-width: 320px;
-    }
-
-    .right__info-connection a {
-        display: block;
-        padding-bottom: 10px;
-        font-size: 13px;
-    } 
-}
-
-@media (max-width: 480px) {
-    .right__decor {
-        display: none;
-    }
-
-    .right__info-caption h1{
-        letter-spacing: normal;
-    }
-
-    .right__skills-level {
-        width: 50%;
-    }  
-}
-
-@media (max-width: 320px) {
-    
 }
