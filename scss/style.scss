@@ -328,10 +328,20 @@ h2 {
             transition: all .3s;
             margin-left: 20px;
             position: relative;
-            @include b(567) {
+            @include b(576) {
                 display: block;
                 padding-bottom: 10px;
                 font-size: 13px;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                } 
             }
 
 

@@ -354,12 +354,18 @@ h2 {
 		margin-left: 20px;
 		position: relative;
 }
-@media (max-width: 567px) {
+@media (max-width: 576px) {
 		.resume__info-connection a {
 				display: block;
 				padding-bottom: 10px;
 				font-size: 13px;
 		}
+		.resume__info-connection a:after {
+				display: none;
+		}
+}
+.resume__info-connection a:last-child:after {
+		display: none;
 }
 .resume__info-connection a::after {
 		content: "";
