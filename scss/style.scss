@@ -66,7 +66,7 @@ h2 {
         flex-direction: column;
     }
     @include b(mobile) {
-        width: 80%;
+        width: 95%;
     }
     @include b(567) {
         min-width: 320px;
