@@ -139,7 +139,7 @@ h2 {
 		padding-bottom: 70px;
 }
 .profile__inner {
-		padding: 47px 30px 70px;
+		padding: 47px 27px 70px;
 		height: 100%;
 }
 .profile__caption {
@@ -210,8 +210,9 @@ h2 {
 		font-family: "Open sans";
 }
 .profile__lenguages-items strong {
+		text-transform: uppercase;
 		color: #fff;
-		font-size: 15px;
+		font-size: 14px;
 		font-family: "Open sans";
 }
 .profile__lenguages-decor {
@@ -403,7 +404,7 @@ h2 {
 		display: block;
 		background-color: #000;
 }
-.resume__experiense-item--title {
+.resume__experiense-item-title {
 		font-family: "Open sans";
 		font-size: 12px;
 		font-weight: 600;
@@ -411,11 +412,23 @@ h2 {
 		margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-		.resume__experiense-item--title {
+		.resume__experiense-item-title {
 				font-size: 14px;
 		}
 }
-.resume__experiense-item--date {
+.resume__experiense-item-position {
+		font-family: "Open sans";
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+		.resume__experiense-item-position {
+				font-size: 14px;
+		}
+}
+.resume__experiense-item-date {
 		font-size: 11px;
 		font-weight: 500;
 		font-family: "Roboto";
@@ -423,19 +436,22 @@ h2 {
 		display: block;
 }
 @media (max-width: 767px) {
-		.resume__experiense-item--date {
+		.resume__experiense-item-date {
 				font-size: 12px;
 		}
 }
-.resume__experiense-item--text {
+.resume__experiense-item-text {
 		font-size: 12px;
 		font-weight: 500;
 		font-family: "Roboto";
 		color: #777777;
 		padding-bottom: 40px;
 }
+.resume__experiense-item-text li {
+		margin-bottom: 5px;
+}
 @media (max-width: 767px) {
-		.resume__experiense-item--text {
+		.resume__experiense-item-text {
 				font-size: 13px;
 				line-height: 1.4;
 		}
