@@ -454,7 +454,6 @@ h2 {
 }
 @media (max-width: 767px) {
 		.resume__experiense-item-text {
-				font-size: 13px;
 				line-height: 1.4;
 		}
 }
