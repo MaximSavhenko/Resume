@@ -161,6 +161,8 @@ h2 {
 }
 .profile__items-contact a {
 		padding-left: 31px;
+		display: block;
+		margin-bottom: 10px;
 		transition: all 0.3s;
 }
 .profile__items-contact a:hover {
