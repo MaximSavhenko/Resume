@@ -48,6 +48,25 @@ h2 {
     color: #39383A;
 }
 
+.btn, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #ff0000;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    @include trs;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
 .wrap {
     overflow: hidden;
 }
@@ -151,6 +170,7 @@ h2 {
     &__items-wrap {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 60px;
     }
 
     &__lenguages-items {
@@ -204,6 +224,11 @@ h2 {
             width: 120px;
             margin-left: 20px;
         }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

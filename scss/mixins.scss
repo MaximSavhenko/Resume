@@ -22,3 +22,7 @@
     }
   
 }
+
+@mixin  trs {
+    transition: all .3s;
+}
