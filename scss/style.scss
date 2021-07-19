@@ -445,13 +445,14 @@ h2 {
         font-family: 'Roboto';
         margin-bottom: 14px;
         display: block;
+        text-transform: uppercase;
         @include b(mobile) {
             font-size: 12px;
         }
     }
 
     &__experiense-item-text {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 500;
         font-family: 'Roboto';
         color: #777777;
@@ -462,6 +463,24 @@ h2 {
         }
         @include b(mobile) {
             line-height: 1.4;
+        }
+    }
+
+    &__experiense-item-sub{
+        padding-left: 10px;
+        padding-top: 10px;
+        li {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            &:before {
+                content:'';
+                width: 5px;
+                height: 1px;
+                background-color: #000;
+                margin-right: 5px;
+            }
         }
     }
 

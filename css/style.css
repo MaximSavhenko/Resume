@@ -460,6 +460,7 @@ h2 {
 		font-family: "Roboto";
 		margin-bottom: 14px;
 		display: block;
+		text-transform: uppercase;
 }
 @media (max-width: 767px) {
 		.resume__experiense-item-date {
@@ -467,7 +468,7 @@ h2 {
 		}
 }
 .resume__experiense-item-text {
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: 500;
 		font-family: "Roboto";
 		color: #777777;
@@ -480,6 +481,23 @@ h2 {
 		.resume__experiense-item-text {
 				line-height: 1.4;
 		}
+}
+.resume__experiense-item-sub {
+		padding-left: 10px;
+		padding-top: 10px;
+}
+.resume__experiense-item-sub li {
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		text-transform: capitalize;
+}
+.resume__experiense-item-sub li:before {
+		content: "";
+		width: 5px;
+		height: 1px;
+		background-color: #000;
+		margin-right: 5px;
 }
 .resume__experiense-item--bordernone {
 		border: none;
